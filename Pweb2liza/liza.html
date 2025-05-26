@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-box">
+    <h3>Login</h3>
+    <form action="profile.html" method="get">
+      <label>Username:</label><br>
+      <input type="text" name="username" required><br>
+      <label>Password:</label><br>
+      <input type="password" name="password" required><br>
+      <div class="remember">
+        <input type="checkbox"> Remember me
+      </div><br>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Portfolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 0; }
+    header, footer { background: #333; color: white; padding: 10px 20px; text-align: center; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; }
+    .container { padding: 20px; }
+    .form-group { margin-bottom: 15px; }
+    label { display: block; }
+    input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; }
+    .btn { background: #333; color: white; padding: 10px 15px; border: none; cursor: pointer; }
+    .profile-img { width: 150px; height: 150px; border-radius: 50%; }
+    .row { display: flex; justify-content: space-between; }
+    .col { width: 48%; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#download">Download CV</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About Me</a>
+    </nav>
+  </header>
+
+  <section class="container" id="register">
+    <h2>Registrasi</h2>
+    <form>
+      <div class="form-group">
+        <label>Nama:</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Username:</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Email:</label>
+        <input type="email">
+      </div>
+      <div class="form-group">
+        <label>Password:</label>
+        <input type="password">
+      </div>
+      <div class="form-group">
+        <label>Jenis kelamin:</label>
+        <label><input type="radio" name="gender"> Laki-laki</label>
+        <label><input type="radio" name="gender"> Perempuan</label>
+      </div>
+      <div class="form-group">
+        <label>Agama:</label>
+        <select>
+          <option>Islam</option>
+          <option>Kristen</option>
+          <option>Hindu</option>
+          <option>Buddha</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Biografi:</label>
+        <textarea></textarea>
+      </div>
+      <button class="btn">Daftar</button>
+    </form>
+  </section>
+
+  <section class="container" id="login">
+    <h2>Login</h2>
+    <form>
+      <div class="form-group">
+        <label>Username:</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Password:</label>
+        <input type="password">
+      </div>
+      <label><input type="checkbox"> Remember me</label>
+      <br><br>
+      <button class="btn">Login</button>
+    </form>
+  </section>
+
+  <section class="container" id="home">
+    <center>
+      <img src="/mnt/data/1000088031.jpg" alt="Foto Profil" class="profile-img">
+      <h1>Nama Lengkap</h1>
+      <p><i>Jabatan atau title</i></p>
+    </center>
+    <h2>Overview</h2>
+    <p>Hi, saya adalah web developer. Saat ini sedang belajar HTML.</p>
+
+    <div class="row">
+      <div class="col">
+        <h3>Skill</h3>
+        <ul>
+          <li>HTML (Expert)</li>
+          <li>CSS (Beginner)</li>
+          <li>JavaScript (Beginner)</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Pengalaman</h3>
+        <ul>
+          <li>Pernah bekerja di _</li>
+          <li>Menjadi leader di komunitas</li>
+          <li>Kontributor open source</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="alamat email">
+      </div>
+      <div class="form-group">
+        <label>Pesan</label>
+        <textarea placeholder="Tulis pesan anda...."></textarea>
+      </div>
+      <button class="btn">Kirim</button>
+    </form>
+  </section>
+
+  <section class="container" id="about">
+    <h2>About Me</h2>
+    <p>Hi, saya adalah web developer. Saat ini sedang belajar HTML.</p>
+    <p>Saya memang masih baru dalam web development. Karena itu, saya tidak akan pernah berhenti belajar.</p>
+    <p>Saya ingin menguasai bahasa HTML, CSS, dan JavaScript. Simak video lengkap tentang saya:</p>
+    <center>
+      <video width="320" height="240" controls>
+        <source src="your-video.mp4" type="video/mp4">
+        Browser Anda tidak mendukung tag video.
+      </video>
+    </center>
+  </section>
+
+  <footer>
+    <p>Copyright 2020 @ Nama pemilik</p>
+  </footer>
+</body>
+</html>

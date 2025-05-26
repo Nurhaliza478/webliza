@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EKSTERNAL CSS</title>
+</head>
+<body>
+	
+	<style type="text/css">
+		 body {
+		background-image: url('senja.jpg');
+		background-size: senja;
+	  }
+	  
+	  header {
+		background: rgba(255,255,225, 0.5);
+	  }
+   </style>
+
+	<style type="text/css">
+	 .tael {
+		color: white;
+		background: teal;
+		padding: 5px;
+	 }
+   </style>
+
+   <style type="text/css">
+	#header {
+	background: maroon;
+	color: yellow;
+	height: 100px;
+	padding: 50px;
+	background: rgb(34,193,195);
+background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(240,45,253,1) 100%);
+}
+   </style>
+
+
+   <header id="header">
+	<h1>Selamat Datang di Website Saya</h1>
+</header>
+   <h2 style="color:blue; font-family: sans;"><b class="tael">Ini judul artikel</b></h2>
+  <p>Ini adalah paragraf yang memuat isi artikel. Paragraf ini hanya untuk percobaan saja. Percobaan untuk mendemokan <i style="color:blue; font-family: sans;">internal css</i>. Seperti namanya, <i style="color:blue; font-family: sans;">inline CSS</i> adalah kode CSS yang ditulis langsung dalam file HTML.</p>
+
+  <style type="text/css">
+	input[type=text] {
+	background: none;
+	color: cyan;
+	padding: 10px;
+	border: 1px solid cyan;
+}
+
+ p {
+	font-size: 20px;
+}
+
+blockquote {
+	background: pink;
+	font-family: "Times new roman", "Georgia", Roboto;
+}
+h2 {
+	color: rgb(88, 255, 21);
+}
+h1 {
+  background: #150cb3;
+background: linear-gradient(90deg, rgba(21, 12, 179, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+</style>
+<input type="text" placeholder="ketik sesuatu..." />
+
+<!-- JAVA SCRIPT-->
+
+ <script>
+		console.log("Saya belajar Javascript");
+		document.write("Hello World!");
+
+	</script>
+	<a href="#" onclick="alert('HALO NAMA SAYA NURHALIZA!')">Klik aku!</a>
+	<a href="javascript:alert('HALO NAMA SAYA LIZA!')">Klik aku!</a>
+	<script src="kdprogram.js"></script>
+
+<!-- ALERT -->
+
+
+	<script src="https://web.whatsapp.com/"></script>
+	 <a href="https://wa.me/05668045895?text=untuk mengetahui lebih lanjut hubungi saya.....">Hubungi saya di WhatsApp</a>
+	 <a href="https://www.youtube.com/">youtube saya</a>
+
+<!-- CONFIRM -->
+	<script>
+		var yakin = confirm("Apakah kamu yakin akan belajar di youtube?");
+
+		if (yakin) {
+			window.location = "https://www.youtube.com";
+		} else {
+			document.write("Baiklah, tetap di sini saja ya :)");
+		}
+	</script>
+	
+<!-- PROMT -->
+
+	<script>
+		var nama = prompt("Siapa nama kamu?", "");
+		document.write("<p>Hello "+ nama +"</p>");
+	</script>
+
+</body>
+</html>

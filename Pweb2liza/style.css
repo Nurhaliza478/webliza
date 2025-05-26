@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* LOGIN */
+.login-box {
+  width: 300px;
+  margin: 100px auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+}
+.remember {
+  margin-top: 10px;
+}
+
+/* PROFIL */
+header {
+  padding: 20px;
+  text-align: center;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: blue;
+}
+.avatar {
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+h2, h3 {
+  text-align: center;
+}
+.section {
+  margin: 30px 0;
+  text-align: center;
+}
+.box-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
